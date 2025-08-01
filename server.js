@@ -12,6 +12,11 @@ const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
+// Health check endpoint for monitoring
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'ok' });
+});
+
 function getCacheKey(endpoint, city) {
     return `${endpoint}:${city}`;
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col">
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Weather Dashboard</h1>
+            <div class="space-x-4">
+                <a href="/index.html" class="hover:underline">Home</a>
+                <a href="/about.html" class="hover:underline">About</a>
+                <a href="/history.html" class="hover:underline">Search History</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto p-4 flex-grow">
+        <h2 class="text-3xl font-bold text-center mb-6">About Weather Dashboard</h2>
+        <p class="text-lg mb-4">The Weather Dashboard is a user-friendly application designed to provide real-time weather information and 5-day forecasts for any city worldwide. Powered by the <a href="https://openweathermap.org/api" class="text-blue-500 underline" target="_blank" rel="noopener">OpenWeatherMap API</a>, it offers features like:</p>
+        <ul class="list-disc list-inside mb-4">
+            <li>Search for current weather and forecasts by city name.</li>
+            <li>Sort forecast data by temperature (ascending or descending).</li>
+            <li>Filter forecasts by weather conditions (e.g., Clear, Rain, Clouds).</li>
+            <li>View recent searches in the Search History page.</li>
+        </ul>
+        <p class="mb-4">This application was built using HTML, CSS (Tailwind CSS), JavaScript, and Node.js with Express for the backend. It is containerized with Docker and deployed with a load balancer for scalability.</p>
+        <p class="font-semibold">Credits:</p>
+        <p>Weather data is provided by <a href="https://openweathermap.org/api" class="text-blue-500 underline" target="_blank" rel="noopener">OpenWeatherMap</a>. Special thanks to their team for maintaining a reliable and accessible API.</p>
+    </div>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2025 Weather Dashboard. Powered by <a href="https://openweathermap.org/api" class="underline" target="_blank" rel="noopener">OpenWeatherMap API</a>.</p>
+    </footer>
+</body>
+</html>
